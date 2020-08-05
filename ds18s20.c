@@ -1,9 +1,9 @@
 /******************************************************************************/
 /* File Name:   ds18b20.c                                                     */
-/* Autor: 			Matthias Inhauser                                             */
-/* Version: 		V1.00                                                        	*/
-/* Date: 				25/07/2017                                                    */
-/* Description: Sensordaden von ds18s20 lesen           		              		*/
+/* Autor: 			Matthias Inhauser                             */
+/* Version: 		V1.00                                                 */
+/* Date: 				25/07/2017                            */
+/* Description: Sensordaden von ds18s20 lesen           		      */
 /******************************************************************************/
 /* History: 	V1.00  	creation										          									*/
 /* 						V1.1		calculation of negative temperatures										*/
@@ -17,9 +17,9 @@
 /******************************************************************************/
 /*            U N T E R P R O G R A M M:    wait_5us                          */
 /*                                                                            */
-/* Aufgabe:   waits 5µs                                                       */
-/* Input:     factor for 5us   						                                    */
-/* return:	 	                                                                */
+/* Aufgabe:   waits 5Âµs                                                       */
+/* Input:     factor for 5us   						      */
+/* return:	 	                                                      */
 /******************************************************************************/
 void wait_5us(int mult)
 {
@@ -36,7 +36,7 @@ void wait_5us(int mult)
 /*                                                                            */
 /* Aufgabe:   Schreibt command auf 1-wire                                     */
 /* Input:     Command in hexadezimal                                          */
-/* return:	 	                                                                */
+/* return:	 	                                                      */
 /******************************************************************************/
 void write(int command)
 {
@@ -79,9 +79,9 @@ void write(int command)
 /******************************************************************************/
 /*            U N T E R P R O G R A M M:    read                              */
 /*                                                                            */
-/* Aufgabe:		Liest von der Datenleitung                                    */
+/* Aufgabe:		Liest von der Datenleitung                            */
 /* Input:                                                                     */
-/* return:	 	                                                              */
+/* return:	 	                                                      */
 /******************************************************************************/
 int read(int mode)
 {
@@ -116,11 +116,11 @@ return temp_C;
 }
 
 /******************************************************************************/
-/*            U N T E R P R O G R A M M:    convert					                  */
+/*            U N T E R P R O G R A M M:    convert			      */
 /*                                                                            */
-/* Aufgabe:   Converts read bits into floating point variable		              */
-/* Input:     bits read							                                          */
-/* return:	 	calculated floating point variable			                        */
+/* Aufgabe:   Converts read bits into floating point variable		      */
+/* Input:     bits read							      */
+/* return:	 	calculated floating point variable		      */
 /******************************************************************************/
 float convert(int temp_C)
 {
@@ -145,7 +145,7 @@ float convert(int temp_C)
 }
 
 /******************************************************************************/
-/* MAIN function 													         													  */
+/* MAIN function 							      */					         													  */
 /******************************************************************************/
 float temp_get (void) 
 {
